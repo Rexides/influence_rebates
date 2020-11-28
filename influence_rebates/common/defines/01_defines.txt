@@ -1,0 +1,3 @@
+NEconomy = {
+	EXPANSION_COST_BASE = 100
+}

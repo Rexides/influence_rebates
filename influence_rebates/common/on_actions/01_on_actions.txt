@@ -1,0 +1,5 @@
+on_building_starbase_outpost = {
+	events = {
+		influence_rebates.1
+	}
+}
