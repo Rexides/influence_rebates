@@ -13,13 +13,7 @@ ship_event = {
 				if = {
 					limit = {
 						exists = owner
-						prevprev.owner = { is_same_value = owner }
-					}
-					prev = {
-						change_variable = {
-							which = _num_systems
-							value = 1
-						}
+						owner = { is_same_value = prev.prev.owner }
 					}
 					prev = {
 						change_variable = {
@@ -28,12 +22,10 @@ ship_event = {
 						}
 					}
 				}
-				else = {
-					prev = {
-						change_variable = {
-							which = _num_systems
-							value = 1
-						}
+				prev = {
+					change_variable = {
+						which = _num_systems
+						value = 1
 					}
 				}
 			}
