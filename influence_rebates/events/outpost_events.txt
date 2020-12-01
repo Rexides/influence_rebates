@@ -155,7 +155,7 @@ ship_event = {
 					AND = {
 						any_neighbor_system = {
 							exists = owner
-							prevprev.owner = { is_same_value = owner }
+							owner = { is_same_value = prev.prev.owner }
 							has_star_flag = empire_home_system
 						}
 					}
